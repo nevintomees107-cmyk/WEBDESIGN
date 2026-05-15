@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Attendance Percentage Calculator</h1>
+
+        <div class="input-box">
+            <label>Total Classes Conducted</label>
+            <input type="number" id="totalClasses" placeholder="Enter total classes">
+        </div>
+
+        <div class="input-box">
+            <label>Classes Attended</label>
+            <input type="number" id="attendedClasses" placeholder="Enter attended classes">
+        </div>
+
+        <div class="input-box">
+            <label>Required Attendance Percentage</label>
+            <input type="number" id="requiredPercentage" placeholder="Enter required percentage">
+        </div>
+
+        <button onclick="calculateAttendance()">Calculate</button>
+
+        <div class="result">
+            <h2 id="currentPercentage"></h2>
+            <h3 id="attendanceNeed"></h3>
+            <h3 id="canSkip"></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
